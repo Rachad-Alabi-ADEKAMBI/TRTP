@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>TPRP-ACCUEIL</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <div class="header__top">
                 <div class="header__top__section">
-                    <i class=""></i>
-                    <span>Horaire</span>
-                    <p> Lun Ven, 8h-18h</p>
+                    <i class="far fa-calendar-alt"></i>
+                    <div class="details">
+                        <span>Horaire</span> 
+                         <p> Lun Ven, 8h-18h</p>
+                    </div>
                 </div>
 
                 <div class="header__top__section">
-                    <i class=""></i>
-                    <span>Contact</span>
-                    <p> 0160201660</p>
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="details">
+                        <span>Contact</span>
+                        <p> 0160201660</p>
+                    </div>
                 </div>
 
                 <div class="header__top__section">
-                    <i class=""></i>
-                    <span>Mail</span>
-                    <p>trtp@tr-tp.com</p>
+                    <i class="fas fa-envelope-square"></i>
+                    <div class="details">
+                        <span>Mail</span>
+                        <p>trtp@tr-tp.com</p>
+                    </div>
                 </div> 
             </div>
-
+<!--
             <div class="header__menu">
                 <div class="header__menu__logo">
-                    <img src="" alt="" class="logo"> 
+                    <img src="public/img/logo.png" alt="" class="logo"> 
                 </div>
 
                 <div class="header__menu__list">
@@ -92,11 +99,10 @@
                 </div>
             </div>
         </header>
-
+-->
         <div class="hero">
-            <img src="" alt="" class="hero__img">
-            <span class="hero__texte">Nous sommes des professionnels</span>
-            <h1 class="hero__title">ETUDES DE BUREAUX</h1>
+            <p class="hero__text">TRTP</p>
+            <h1 class="hero__title">TRTP - ACCUEIL</h1>
             <button class="hero__btn">
                 OBTENIR UN DEVIS
             </button>
@@ -104,42 +110,40 @@
 
         <section class="vision">
             <div class="vision__image">
-                <img src="" alt="">
+                <img src="public/img/goals.jpg" alt="">
             </div>
 
-            <div class="vision__texte">
-                <p class="vision__texte__top">
-                    Bienveunue chez TRTP
+            <div class="vision__text">
+                <p class="vision__text__top">
+                    Bienvenue chez TRTP
                 </p>
 
-                <h2 class="vision__texte__heading">
+                <h2 class="vision__text__title">
                     VISION DE LA SOCIETE
                 </h2>
 
-                <p class="vision__texte__content">
-                    Notre vision est d’être d’ici à 5 ans, un 
+                <p class="vision__text__content">
+                    <i class="fas fa-arrow-right"></i>Notre vision est d’être d’ici à 5 ans, un 
                     partenaire incontournable des principaux 
                     donneurs d’ordre en matière de distribution,
                     électrique, gaz, eau et de tuyauteries industrielles. 
                     Avec une augmentation de la part de marché d’environ 
                     50%. <br> 
 
-                    Atteindre une note de 95 % de satisfaction 
+                    <i class="fas fa-arrow-right"></i>Atteindre une note de 95 % de satisfaction 
                     pour les 3 prochaines années lors des sondages
                      de satisfaction de la clientèle. <br>
 
-                    Développer 2 nouvelles branches sur le territoire
+                     <i class="fas fa-arrow-right"></i>Développer 2 nouvelles branches sur le territoire
                     national et une nouvelle branche à l’international,
-                    d’ici la fin de 2025
+                    d’ici la fin de 2025.
                 </p>
-
-                .
             </div>
         </section>
 
         <div class="projects">
             <div class="projects__ordered">
-                <i></i>
+                <i class="fas fa-building"></i>
                 <span class="projects__ordered__number">647</span>  
                 <p class="projects__ordered__text">
                     PROJETS COMMANDÉS
@@ -147,10 +151,10 @@
             </div>
 
             <div class="projects__done">
-                <i></i>
+                <i class="fas fa-city"></i>
                 <span class="projects__done__number">398</span>  
                 <p class="projects__done__text">
-                    PROJETS COMMANDÉS
+                    PROJETS REALISÉS
                 </p>
             </div>
         </div>
@@ -160,91 +164,84 @@
                 Nos services
             </p>
 
-            <h2 class="services__title">LES SERVICES QUE nOUS PROPOSONS</h2>
+            <h2 class="services__title">LES SERVICES QUE NOUS PROPOSONS</h2>
 
             <div class="services__list">
-                <div class="service__list__item">
-                    <img src="" alt="">
+                <div class="services__list__item">
+                    <img src="public/img/terrassement.jpeg" alt="">
 
                     <div class="legend">
                         <p>TERRASSEMENT</p>
-                        <i></i>
+                        <i class="fas fa-arrow-down"></i>
                     </div>
 
-                    <div class="legend__text">
+                    <div class="text">
                         Nos équipes interviennent le plus souvent dans les environnements difficiles d'accès....
                     </div>
                 </div>
 
-                <div class="service__list__item">
-                    <img src="" alt="">
+                <div class="services__list__item">
+                    <img src="public/img/plan.jpeg" alt="">
 
                     <div class="legend">
                         <p>ETUDE</p>
-                        <i></i>
+                        <i class="fas fa-arrow-down"></i>
                     </div>
 
-                    <div class="legend__text">
+                    <div class="text">
                         Notre bureau d'étude est spécialisé dans la réalisation des études de renouvellement et de conception des ouvrages de distribution de gaz, d'électricité et d'eau.
                     </div>
                 </div>
 
-                <div class="service__list__item">
-                    <img src="" alt="">
+                <div class="services__list__item">
+                    <img src="public/img/soudure.jpeg" alt="">
 
                     <div class="legend">
                         <p>SOUDURE</p>
-                        <i></i>
+                        <i class="fas fa-arrow-down"></i>
                     </div>
 
-                    <div class="legend__text">
+                    <div class="text">
                         Réalisation des projets dans les domaines de la peinture, de la soudure, du terrassement, et de la construction. Besoin de rafraichir une maison ou un bâtiment, nos experts vous accompagnent de la
                     </div>
                 </div>
 
-                <div class="service__list__item">
-                    <img src="" alt="">
+                <div class="services__list__item">
+                    <img src="public/img/paint.jpeg" alt="">
 
                     <div class="legend">
                         <p>PEINTURE</p>
-                        <i></i>
+                        <i class="fas fa-arrow-down"></i>
                     </div>
 
-                    <div class="legend__text">
+                    <div class="text">
                         Réalisation des projets dans les domaines de la peinture, de la soudure, du terrassement, et de la construction. Besoin de rafraichir une maison ou un bâtiment, nos experts vous accompagnent de la
                     </div>
                 </div>
             </div>
         </div>
-
+<!--
         <div class="video">
-            <video src="">
+            <video src="public/img/video.mp4">
 
             </video>
         </div>
-
+-->
         <div class="partners">
-            <h2 class="partners__title">
+            <p class="partners__top">
                 Nos partenaires
+            </p>
+
+            <h2 class="partners__title">
+                NOS PARTENAIRES
             </h2>
 
-            <ul class="partners__list">
-                <li class="partners__list__item">
-                    <img src="" alt="">
-                </li>
-
-                <li class="partners__list__item">
-                    <img src="" alt="">
-                </li>
-
-                <li class="partners__list__item">
-                    <img src="" alt="">
-                </li>
-
-                <li class="partners__list__item">
-                    <img src="" alt="">
-                </li>
-            </ul>
+            <div class="partners__list">
+                <img src="public/img/grdf.png" alt="">
+                <img src="public/img/Disneyland.png" alt="">
+                <img src="public/img/bir-travaux.jpg" alt="">
+                <img src="public/img/logo-locatrain.png" alt="">
+                <img src="public/img/logo-BIR.png" alt="">
         </div>
 
         <div class="latest">
@@ -262,7 +259,7 @@
         </div>
     </div>  
 
-    <div class="footer">
+    <footer class="footer">
         <div class="footer__top">
             <div class="footer__top__menu">
                 <div class="footer-section">
@@ -270,23 +267,23 @@
 
                     <ul class="footer-list">
                         <li>
-                            <i></i>
+                            <i class="fas fa-map-marker-alt"></i>
                             logne trt p
                         </li>
 
                         <li>
-                            <i></i>
+                            <i class="fas fa-phone-alt"></i>
                             0160201660
                         </li>
 
                         <li>
-                            <i></i>
+                            <i class="fas fa-envelope-square"></i>
                             trtp@tr-tp.com
                         </li>
 
                         <li>
-                            <i></i>
-                            <i></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-linkedin"></i>
                         </li>
                     </ul>
                 </div>
@@ -295,23 +292,31 @@
                         <h3>NOS SERVICES</h3>
                         <ul class="footer-list">
                             <li>
-                                <i></i>
-                                TERRASSEMENT
+                                <a href="terrassement.html">
+                                    <i class="fas fa-chevron-right"></i>
+                                    TERRASSEMENT
+                                </a>
                             </li>
 
                             <li>
-                                <i></i>
-                                ETUDE DE BUREAUX
+                                <a href="bureaux.html">
+                                    <i class="fas fa-chevron-right"></i>
+                                    ETUDES DE BUREAUX
+                                </a>
                             </li>
 
                             <li>
-                                <i></i>
-                                TRAVAUX
+                                <a href="soudure.html">
+                                    <i class="fas fa-chevron-right"></i>
+                                   SOUDURE
+                                </a>
                             </li>
 
                             <li>
-                                <i></i>
-                                <i></i>
+                                <a href="peinture.html">
+                                    <i class="fas fa-chevron-right"></i>
+                                   PEINTURE
+                                </a>
                             </li>
                         </ul>
                 </div>
@@ -321,23 +326,31 @@
 
                     <ul class="footer-list">
                         <li>
-                            <i></i>
-                            ACCUEIL
+                            <a href="index.html">
+                                <i class="fas fa-chevron-right"></i>
+                                ACCUEIL
+                            </a>
                         </li>
 
                         <li>
-                            <i></i>
-                            SOCIETE
+                            <a href="societe.html">
+                                <i class="fas fa-chevron-right"></i>
+                                SOCIETE
+                            </a>
                         </li>
 
                         <li>
-                            <i></i>
-                            "NOUS REJOINDRE"
+                            <a href="nous-rejoindre.html">
+                                <i class="fas fa-chevron-right"></i>
+                                NOUS REJOINDRE
+                            </a>
                         </li>
 
                         <li>
-                            <i></i>
-                            "QSE"
+                            <a href="qse.html">
+                                <i class="fas fa-chevron-right"></i>
+                                QSE
+                            </a>
                         </li>              
                     </ul>
                 </div>
@@ -361,9 +374,9 @@
             </ul>
 
             <p class="footer__bottom__txt">
-                TRTP - TOUS DROITS RESERVES 2015
+                © <span> TRTP - TOUS DROITS RESERVES 2015</span>
             </p>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
-    <title>TRTP - ETUDES DE BUREAUX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRTP - nous rejoindre</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <div class="header__top">
                 <div class="header__top__section">
                     <i class=""></i>
@@ -99,7 +97,7 @@
 
         <div class="hero">
             <img src="" alt="" class="hero__img">
-            <h1 class="hero__title">ETUDES DE BUREAUX</h1>
+            <h1 class="hero__title">NOUS REJOINDRE</h1>
 
             <ul class="hero__links">
                 <li class="hero__links__item">
@@ -110,42 +108,169 @@
 
                 <li class="hero__links__item">
                     <a href="societe.html">
-                        Services
+                        Nous rejoindre
                     </a>
                 </li>
             </ul>
         </div>
 
+        <div class="jobs">
+            <div class="jobs__top">
+                Offres d'emploi
+            </div>
+
+            <h1 class="jobs__title">
+                OFFRES D'EMPLOI
+            </h1>
+
+            <div class="jobs__list">
+                <div class="jobs__list__item">
+                    <h2 class="job-title">
+                        SOUDEUR TIG
+                    </h2>
+                </div>
+
+                <div class="jobs__list__item">
+                    <h2 class="job-title">
+                        MANAGER COMMERCIAL
+                    </h2>
+                </div>
+
+                <div class="jobs__list__item">
+                    <h2 class="job-title">
+                        APPRENTI EN ALTRENANCE...                 </h2>
+                </div>
+
+            </div>
+        </div>
+
         <div class="content">
             <div class="content__image">
-                <img src="public/img/soudure.jpeg" alt="">
+                <img src="public/img/logo.png" alt="">
             </div>
 
             <div class="content__text">
-                <p class="content__text__top">
-                    soudure
-                </p>
+                <div class="content__text__text">
+                    Vous êtes à la recherche d’une structure à taille humaine
+                et soucieuse de votre épanouissement alors n’hésitez à nous
+                rejoindre car, plus que les autres, nous savons comment il
+                est primordial d’évoluer dans un environnement serein afin,
+                de dévoiler pleinement son potentiel. <br>
 
-                <h1 class="content__text__title">
-                    SOUDURE
-                </h1>
+                Nous rejoindre s’est avant tout, avoir un esprit professionnel,             
+                prôner la sécurité au quotidien et aider en s’engageant. <br>
 
-                <p class="content__text__text">
-                    Besoin de rafraichir une maison ou un bâtiment, nos 
-                experts vous accompagnent de la définition du projet 
-                en passant par, le choix des matériaux jusqu'à la 
-                livraison. <br>
+                Nous sommes spécialisés en travaux de terrassement, 
+                de distribution électrique, gaz, eau et de tuyauteries
+                industrielles.
+                </div>
+            </div>           
+        </div>
 
-                Besoin de terrasser une parcelle ou un domaine, 
-                nos experts vous accompagnent de l'étude du sol à 
-                la mise en œuvre des longueurs et volumes demandées. <br>
+        <div class="jobs__form">
+            <h3>CANDIDATURE POUR UNE OFFRE D'EMPLOI</h3>
+            <p>VEUILLEZ REMPLIR LE FORMULAIRE CI DESSOUS POUR 
+                POSTULER A UN EMPLOI CHEZ NOUS
+            </p>
 
-                Besoin des prestations de soudure et de mise en œuvre 
-                des tuyauteries, nos experts vous accompagnent 
-                de l'étude du projet, en passant par les essais et
-                 la mise en service.
-                </p>
-            </div>
+            <form action="#" class="form">
+                <h4>Nom complet <strong>*</strong> </h4>
+
+                <div class="name-details">
+                    <label for="first-name">
+                        <input type="text" >
+                        <p>Prenom</p>
+                    </label>
+
+                    <label for="second-name">
+                        <input type="text">
+                        <p>Deuxieme prenom</p>
+                    </label>
+
+                    <label for="second-name">
+                        <input type="text">
+                        <p>Nom de famille</p>
+                    </label>
+                </div>
+                
+                <h4>Adresse actuelle </h4>
+                <div class="adress-details">
+                    <label for="adress">
+                        <input type="text">
+                        <p>Adresse</p>
+                    </label>
+
+                    <label for="adress-plus">
+                        <input type="text">
+                        <p>Complement adresse</p>
+                    </label>
+
+                    <label for="city">
+                        <input type="text">
+                        <p>Ville</p>
+                    </label>
+
+                    <label for="zip-code">
+                        <input type="number">
+                        <p>Code postal</p>
+                    </label>
+                </div>
+
+                <h4>Adresse email <span>*</span></h4>
+                <label for="email">
+                    <input type="email">
+                    <p>exemple@exemple.com</p>
+                </label>
+
+                <h4>Numero de telephone</h4>
+                <div class="phone-details">
+                    <label for="phone-code">
+                        <input type="number"> <br>
+                        <p>indicatif</p>
+                    </label>
+
+                    <label for="phone__number">
+                        <input type="text">
+                        <p>Numero de telephone</p>
+                    </label>
+                </div>
+
+                <h4>Candidature au poste de <span>*</span></h4>
+                <label for="job-title">
+                    <input type="text">
+                </label>
+
+                <h4>Type de contrat <span>*</span></h4>
+                <label for="contract">
+                    <input type="text">
+                </label>
+
+                <h4>Disponible a partir de</h4>
+                <div class="availability-details">
+                    <label for="month">
+                        <input type="number">
+                        <p>Mois</p>
+                    </label>
+
+                    <label for="day">
+                        <input type="number">
+                        <p>Jour</p>
+                    </label>
+
+                    <label for="year">
+                        <input type="number">
+                        <p>Annee</p>
+                    </label>
+
+                    <i></i>
+                </div>
+
+                <h5>Deposez votre cv et lettre de motivation ici</h5>
+
+                <button type="submit" class="submit__job">
+                    Postuler
+                </button>
+            </form>
         </div>
 
         <footer class="footer">
