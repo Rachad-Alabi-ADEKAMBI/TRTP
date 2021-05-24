@@ -33,65 +33,38 @@
             </div>
 
             <div class="header__menu">
-                <div class="header__menu__logo">
-                    <img src="" alt="" class="logo"> 
-                </div>
+                <nav>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="public/img/logo.png" alt="">
+                    </div>
+                    <!-- mobile menu toggle and icon -->
+                    <input class="menu-toggle" id="menu-toggle" type="checkbox">
+                    <label class="menu-toggle-button fas fa-bars" for="menu-toggle">
+                    </label>
+                  
+                    <!-- Menu -->
+                    <ul class="main-nav">
+                      <li><a href="index.html">ACCUEIL </a>
+                      </li>
 
-                <div class="header__menu__list">
-                    <ul>
-                        <li>
-                            <a href="#">ACCUEIL</a>
-                        </li>
+                      <li><a href="societe.html">SOCIETE</a>
+                      </li>
 
-                        <li>
-                            <a href="societe.html">SOCIETE</a>
-                        </li>
-
-                        <li>
-                            <ul>
-                                <li>
-                                    <a href="terrassement.html">
-                                        TERRASSEMENT
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="etude.html">
-                                        ETUDE DE BUREAUX    
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="soudure.html">
-                                        SOUDURE/PLOMBERIE
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="peinture.html">
-                                        PEINTURE
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="nous-rejoindre.html"></a>
-                        </li>
-
-                        <li>
-                            <a href="qse.html">
-                                QSE
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">
-                                CONTACT
-                            </a>
-                        </li>
+                      <li><a href="#">METIERS</a>
+                        <!-- Experiences dropdown menu -->
+                        <ul class="dropdownmenu">
+                          <li><a href="terrassement.html"> TERRASSEMENT</a></li>
+                          <li><a href="bureaux.html">BUREAUX D'ETUDE</a></li>
+                          <li><a href="soudure.html">SOUDURE</a></li>
+                          <li><a href="peinture.html">PEINTUTRE</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="nous-rejoindre.html">REJOINDRE</a></li>
+                      <li><a href="qse.html">QSE</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
                     </ul>
-                </div>
+                  </nav>
             </div>
         </header>
 
@@ -115,9 +88,9 @@
         </div>
 
         <div class="jobs">
-            <div class="jobs__top">
+            <p class="jobs__top">
                 Offres d'emploi
-            </div>
+            </p>
 
             <h1 class="jobs__title">
                 OFFRES D'EMPLOI
@@ -144,13 +117,13 @@
             </div>
         </div>
 
-        <div class="content">
-            <div class="content__image">
+        <div class="content-job">
+            <div class="content-job__image">
                 <img src="public/img/logo.png" alt="">
             </div>
 
-            <div class="content__text">
-                <div class="content__text__text">
+            <div class="content-job__text">
+                <p>
                     Vous êtes à la recherche d’une structure à taille humaine
                 et soucieuse de votre épanouissement alors n’hésitez à nous
                 rejoindre car, plus que les autres, nous savons comment il
@@ -163,7 +136,7 @@
                 Nous sommes spécialisés en travaux de terrassement, 
                 de distribution électrique, gaz, eau et de tuyauteries
                 industrielles.
-                </div>
+            </p>
             </div>           
         </div>
 
@@ -174,7 +147,7 @@
             </p>
 
             <form action="#" class="form">
-                <h4>Nom complet <strong>*</strong> </h4>
+                <h4>Nom complet <i class="fas fa-star"></i></h4>
 
                 <div class="name-details">
                     <label for="first-name">
@@ -216,7 +189,7 @@
                     </label>
                 </div>
 
-                <h4>Adresse email <span>*</span></h4>
+                <h4>Adresse email <i class="fas fa-star"></i></h4>
                 <label for="email">
                     <input type="email">
                     <p>exemple@exemple.com</p>
@@ -235,12 +208,12 @@
                     </label>
                 </div>
 
-                <h4>Candidature au poste de <span>*</span></h4>
+                <h4>Candidature au poste de <i class="fas fa-star"></i></h4>
                 <label for="job-title">
                     <input type="text">
                 </label>
 
-                <h4>Type de contrat <span>*</span></h4>
+                <h4>Type de contrat <i class="fas fa-star"></i></h4>
                 <label for="contract">
                     <input type="text">
                 </label>
@@ -249,7 +222,7 @@
                 <div class="availability-details">
                     <label for="month">
                         <input type="number">
-                        <p>Mois</p>
+                        <p>Jour</p>
                     </label>
 
                     <label for="day">
@@ -315,7 +288,7 @@
                                 <li>
                                     <a href="bureaux.html">
                                         <i class="fas fa-chevron-right"></i>
-                                        ETUDES DE BUREAUX
+                                        BUREAUX D'ETUDE
                                     </a>
                                 </li>
     

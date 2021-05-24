@@ -6,14 +6,12 @@
     <link rel="stylesheet" href="/public/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRTP - CONTACT</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <div class="header__top">
                 <div class="header__top__section">
                     <i class=""></i>
@@ -34,99 +32,69 @@
                 </div> 
             </div>
 <!---->
-            <div class="header__menu">
-                <div class="header__menu__logo">
-                    <img src="" alt="" class="logo"> 
-                </div>
+<div class="header__menu">
+    <nav>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="public/img/logo.png" alt="">
+        </div>
+        <!-- mobile menu toggle and icon -->
+        <input class="menu-toggle" id="menu-toggle" type="checkbox">
+        <label class="menu-toggle-button fas fa-bars" for="menu-toggle">
+        </label>
+      
+        <!-- Menu -->
+        <ul class="main-nav">
+          <li><a href="index.html">ACCUEIL </a>
+          </li>
 
-                <div class="header__menu__list">
-                    <ul>
-                        <li>
-                            <a href="#">ACCUEIL</a>
-                        </li>
+          <li><a href="societe.html">SOCIETE</a>
+          </li>
 
-                        <li>
-                            <a href="societe.html">SOCIETE</a>
-                        </li>
-
-                        <li>
-                            <ul>
-                                <li>
-                                    <a href="terrassement.html">
-                                        TERRASSEMENT
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="etude.html">
-                                        ETUDE DE BUREAUX    
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="soudure.html">
-                                        SOUDURE/PLOMBERIE
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="peinture.html">
-                                        PEINTURE
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="nous-rejoindre.html"></a>
-                        </li>
-
-                        <li>
-                            <a href="qse.html">
-                                QSE
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">
-                                CONTACT
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          <li><a href="#">METIERS</a>
+            <!-- Experiences dropdown menu -->
+            <ul class="dropdownmenu">
+              <li><a href="terrassement.html"> TERRASSEMENT</a></li>
+              <li><a href="bureaux.html">BUREAUX D'ETUDE</a></li>
+              <li><a href="soudure.html">SOUDURE</a></li>
+              <li><a href="peinture.html">PEINTUTRE</a></li>
+            </ul>
+          </li>
+          <li><a href="nous-rejoindre.html">REJOINDRE</a></li>
+          <li><a href="qse.html">QSE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+</div>
         </header>
 
         <div class="content">
             <h1 class="content__title">
-                CONTACTER NOUS
+                CONTACTEZ - NOUS
             </h1>
         </div>
 
         <div class="formulaire">
             <div class="formulaire__inner">
-                <form action="#">
-
-                    <label for="name" class="label-name">
-                        <input type="text" placeholder="Votre nom">
-                    </label> <br>
-
-                    <label for="label-email">
-                        <input type="email" placeholder="Votre email">
-                    </label> <br>
-
-                    <label for="objet" class="label-objet">
-                        <input type="text" placeholder="objet">
-                    </label> <br>
-
-                    <label for="message" class="label-message">
-                        <input type="text" placeholder="message">
-                    </label>
-
-                    <button>
-                        Envoyer
-                    </button>
-                </form>
+                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data" class="form">
+                    <div class="row">
+                      <label class="required" for="name">Votre nom:</label><br />
+                      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                      <span id="name_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                      <label class="required" for="email">Votre email:</label><br />
+                      <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                      <span id="email_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                      <label class="required" for="message">Votre message:</label><br />
+                      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                      <span id="message_validation" class="error_message"></span>
+                    </div>
+                      
+                      <input id="submit_button" type="submit" value="Envoyer" />
+                  </form>
             </div>
         </div>
         <footer class="footer">
@@ -224,8 +192,7 @@
                             </li>              
                         </ul>
                     </div>
-                </div>
-                
+                </div>            
             </div>
 
             <div class="footer__bottom">

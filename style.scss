@@ -5,6 +5,10 @@ $title: #03232F;
 
 $top: 22px;
 
+h1{
+    border-bottom: 1px $title solid;
+    margin: 20px auto;
+}
 html, body{
     box-sizing: border-box;
     margin: auto;
@@ -12,73 +16,365 @@ html, body{
     font-family: 'Athiti', sans-serif;
     font-size: 20px;
     line-height: 1.6em;
- 
     }
 
     .container{
         display: block;
 
-            .header{
-                width: 100%;
-                margin: auto auto 20px auto;
+        .header{
+            width: 100%;
+            margin: auto auto 0 auto;
+            background-color: $yellow;
 
-                &__top{
-                    height: 80px;
-                    padding-top: 10px;
-                    width: 100%;
-                    background-color: $yellow;
+            &__top{
+                height: 50px;
+                margin: auto;
+                padding-top: 10px;
+                width: 100%;
+                background-color: $yellow;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                &__section{
+                    margin-top: auto;
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-around;
+                    justify-content: space-between;
 
-                    &__section{
+                    i{
+                        font-size: 20px;  
+                        margin-top: 15px;                    
+                    }
+
+                    .details{
                         display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-
-                        i{
-                            font-size: 35px;  
-                            margin-top: 10px;                    
-                        }
-
-                        .details{
-                            display: flex;
-                            flex-direction: column;
-                            padding-left: 10px;                       
-                        }
-                    }
-                }
-
-                &__menu{
-                    display: none;
-                    &__logo{
-                        float: left;
-                        height: 60px;
-                        margin: auto 30px;
-
-                        img{
-                            width: 90px;
-                            height: 120px;
-                        }
-                    }
-
-                    &__list{
-                        float: right;
-                        ul{
-                            li{
-                                display: inline;
-                                list-style: none;
-                            }
+                        flex-direction: column;
+                        padding-left: 10px; 
+                        font-size: 18px;
+                        
+                        p{
+                            font-size: 18px;
+                            margin-top: -15px;
                         }
                     }
                 }
             }
 
+            &__menu{
+                input:focus,
+                select:focus,
+                textarea:focus,
+                button:focus {
+                outline: none;
+                width:  100%;
+                margin: auto;
+                background: $yellow;
+                }
+
+                /* logo */
+                nav .logo {
+                    align-self: center;
+                    padding-left: 30px;
+                    padding-top: 20px;
+                    background-color: $title;
+                    height: 60px;
+
+                    img{
+                        height: 50px;
+                        width: 50px;
+                        margin: auto;
+                    }
+                }
+                
+                /* white bar */
+                nav {
+                    display: flex;
+                    align-content: center;
+                    width: 80%;
+                    margin-top: 0px;
+                    border-bottom: #440f0f;
+                    background: $title;
+                    height: 80px;
+                    margin: auto;
+                }
+                
+                /* group of menu items */
+                ul.main-nav {
+                    margin: 0px;
+                    background-color: $title;
+                    padding: 0px;
+                    text-align: right;
+                    margin-left: auto;
+                    padding-right: 30px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    list-style-type: none;
+                }
+                
+                /* menu list items */
+                
+                ul.main-nav > li {
+                    margin-left: 40px;
+                    height: 100%;
+                    display: flex;
+                }
+                
+                ul.main-nav li:hover > a {
+                    color: $yellow;
+                }
+                
+                /* menu list items link styles */
+                ul.main-nav li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: $top;
+                    align-self: center;
+                }
+                
+                /* Mega menu */
+                
+                ul.main-nav li .mega-menu {
+                    position: absolute;
+                    background: $title;
+                    width: 100%;
+                    left: 0;
+                    top: 70px;
+                    padding: 35px 12px;
+                    display: none;
+                    box-sizing: border-box;
+                    border-top: 1px solid #dddddd;
+                }
+                
+                ul.main-nav li:hover .mega-menu {
+                    display: flex;
+                }
+                
+                input {
+                    border: 1px solid #eeeeee;
+                    padding: 10px 10px 10px 50px;
+                    border-radius: 300px;
+                    font-size: 14px;
+                    background: none;
+                }
+                
+                a#locationselector {
+                    margin: 0px auto;
+                    margin-top: 34px;
+                    padding: 15px 39px;
+                    display: table;
+                    clear: both;
+                    border-radius: 30px;
+                    font-size: 15px;
+                    color: $title;
+                    background: #f87573;
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    -o-transition: all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
+                    cursor: pointer;
+                }
+                
+                a#locationselector:hover {
+                    background: $title;
+                }
+                
+                i.fa-map-marker-alt {
+                    padding-right: 10px;
+                }
+                
+                a.imgbounds {
+                    overflow: hidden;
+                    display: block;
+                    height: 150px;
+                    width: 100%;
+                    position: relative;
+                    background: black;
+                }
+                
+                a.imgbounds p {
+                    color: white;
+                    font-size: 22px;
+                    position: absolute;
+                    text-align: center;
+                    margin: auto;
+                    width: 100%;
+                    top: 46%;
+                }
+                
+                a.imgbounds img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                    transition: all 1s ease-in-out;
+                }
+                
+                a.imgbounds:hover img {
+                    opacity: 0.6;
+                    transform: scale(1.2);
+                    transition: all 1s ease-in-out;
+                }
+                
+                /*dropdown menu */
+                
+                ul.dropdownmenu {
+                    padding: 0px;
+                    margin: 0px;
+                    position: absolute;
+                    background: $title;
+                    width: auto;
+                    top: 70px;
+                    display: none;
+                    box-sizing: border-box;
+                    text-align: left;
+                    margin-left: -19px;
+                }
+                
+                ul.main-nav li:hover .dropdownmenu {
+                    display: block;
+                }
+                
+                ul.dropdownmenu li {
+                    flex-direction: column;
+                    border-top: 1px solid #dddddd;
+                    width: 100%;
+                    list-style: none;
+                    padding: 16px 39px 16px 20px;
+                    box-sizing: border-box;
+                    font-size: 15px;
+                }
+                
+                /* Mobile nav */
+                
+                .menu-toggle-button {
+                    cursor: pointer;
+                    display: none;
+                    user-select: none;
+                    margin-left: auto;
+                    align-self: center;
+                    padding-right: 30px;
+                }
+                
+                .menu-toggle-button:hover {
+                    color: #f87573;
+                }
+                
+                .menu-toggle {
+                    opacity: 0;
+                    pointer-events: none;
+                    position: absolute;
+                }
+                
+                /* EVERYTHING BELOW THIS IS FOR MOBILE MENU BREAK */
+                
+                @media screen and (max-width: 767px) {
+                    .col {
+                    margin: 0px;
+                    }
+                
+                    nav {
+                        width: 100%;
+                        border-bottom: 1px solid #dddddd;
+                    }
+                
+                    ul.main-nav {
+                    display: block;
+                    flex-direction: column;
+                    position: absolute;
+                    width: 100%;
+                    top: 71px;
+                    height: 100vh;
+                    overflow-y: scroll;
+                    margin-bottom: 70px;
+                    }
+                
+                    ul.main-nav li {
+                    height: auto;
+                    position: relative;
+                    background:$title;
+                    width: 100%;
+                    margin: 0px;
+                    padding: 30px 40px;
+                    box-sizing: border-box;
+                    text-align: left;
+                    border-bottom: 1px solid #dddddd;
+                    display: block;
+                    }
+                
+                    ul.main-nav > li:last-child {
+                    border-bottom: 0px;
+                    padding-bottom: 130px;
+                    }
+                
+                    .menu-toggle:not(:checked) ~ ul {
+                    display: none;
+                    }
+                
+                    input:checked + label {
+                    color: #f87573;
+                    }
+                
+                    input:checked + label:before {
+                    content: "\f00d";
+                    font-size: 20px;
+                    }
+                
+                    .menu-toggle-button {
+                    display: inline-flex;
+                    }
+                
+                    ul.main-nav li:hover .mega-menu {
+                    display: inline-flex;
+                    flex-direction: column;
+                    }
+                
+                    ul.main-nav li .mega-menu {
+                    position: relative;
+                    width: 100%;
+                    }
+                
+                    ul.main-nav li .mega-menu {
+                    padding: 0px;
+                    border-top: 0px;
+                    top: 0px;
+                    display: inline-block;
+                    }
+                
+                    a.imgbounds {
+                    margin-top: 30px;
+                    }
+                    ul.main-nav li:hover .mega-menu {
+                    display: inline-block;
+                    }
+                
+                    ul.dropdownmenu {
+                    padding: 0px;
+                    margin: 0px;
+                    position: relative;
+                    width: 100%;
+                    top: 0px;
+                    margin-top: 30px;
+                    display: block;
+                    }
+                
+                    ul.dropdownmenu li {
+                    border: 0px;
+                    padding: 15px 40px;
+                    }
+                
+                    ul.main-nav li:hover .dropdownmenu {
+                    display: block;
+                    }
+                }
+            }
+        }
+
             .hero{
                 display: block;
                 padding-top: 130px;
-                margin: 60px auto;
-                width: 100%;
+                margin: 0 auto 50px auto;
+                width: 100%; 
                 background: rgb(137, 137, 231);
                 height: 350px;
                 text-align: center;
@@ -109,8 +405,7 @@ html, body{
                 &__btn:hover{
                     background-color: $yellow;
                     color: black;
-                }
-          
+                } 
             }
 
             .vision{
@@ -121,9 +416,12 @@ html, body{
                 margin: auto;
 
                 &__image{
+                    width: 550px;
+                    margin: auto;
                     img{
                         height:410px;
                         width: 550px;
+                        margin: auto;
                     }                  
                 }
 
@@ -136,12 +434,12 @@ html, body{
                     text-align: justify;
                     padding-left: 30px;
                     padding-right: 30px;
-                    font-weight: 550;
+                    text-align: center;
+                    padding-top: 5px;
 
                     &__top{
                         color: $yellow;
                         font-size: $top;
-                        margin: 0 auto;
                     }
 
                     &__title{
@@ -151,6 +449,7 @@ html, body{
                     }
 
                     &__content{
+                        text-align: justify;
                         i{
                             color: $title;
                             margin-right: 10px;
@@ -172,7 +471,7 @@ html, body{
                     height: 150px;
                     flex: 1;
                     padding-top: 50px;
-                    padding-left: 250px;
+                    text-align: center;
 
                     i{
                         color: $yellow;
@@ -197,8 +496,8 @@ html, body{
                     background-color: $yellow;
                     height: 150px;
                     flex: 1;
-                    padding-left: 100px;
                     padding-top: 50px;
+                    text-align: center;
 
                     i{
                         color: $title;
@@ -226,16 +525,19 @@ html, body{
 
                 &__top{
                     color: $yellow;
-                    font-size: $top
+                    font-size: $top;
                 }
 
                 &__title{
                     color: $title;
+                    width: auto;
                     font-size: 30px;
+                    border-bottom: 2px solid $title;
                 }
 
                 &__list{
                     display: flex;
+                    flex-wrap: wrap;
                     width: 100%;
                     margin-top: 5px auto;
                     flex-direction: row;
@@ -302,7 +604,6 @@ html, body{
                 margin:50px auto;
                 text-align: center;
 
-
                 &__top{
                     color: $yellow;
                     font-size: $top;
@@ -310,6 +611,7 @@ html, body{
 
                 &__title{
                     color: $title;
+                    border-bottom: 2px solid $title;
                    
                 }
 
@@ -327,28 +629,43 @@ html, body{
                 }
             }
 
+            .latest{
+                &__top{
+                    color: $yellow;
+                    font-size: $top;
+                }
+
+                &__title{
+                    color: $title;
+                    border-bottom: 1px solid $title;
+                }
+            }
+
             .content{
                 display: flex;
                 flex-direction: row;
-                width: 90%;
+                justify-content: space-around;
+                width: 100%;
                 margin: auto auto 50px auto;
 
                 &__image{
+                    margin: auto;
                     img{
-                        width: 550px;
-                        height: 470px;
+                        width: 500px;
+                        height: 550px;
+                        margin: auto;
                     }
                 }
 
                 &__text{
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    border: 1px $yellow;
+                    width: 700px;
                     height: auto;
                     background-color: rgb(233, 233, 199);
                     margin: 0 15px;
-                    text-align: justify;
+                    text-align:  justify;
                     font-size: 15px;
+                    padding: 20px;
+                    border: 2px $title solid;
 
                     &__top{
                         font-size: $top;
@@ -361,10 +678,195 @@ html, body{
                         color: $title;
                         margin: 10px auto;
                         text-align: center;
+                        border-bottom: 1px solid $title;
                     }
 
                     &__text{
+                        margin: auto;font-weight: bold;
+                        font-size: 20px;
+                        width: 700px;
+                    }
+                }
+            }
+
+            .content-job{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 80%;
+                margin: 20px auto 50px auto;
+             
+
+                &__image{
+                    height: 150px;
+                    margin: auto;
+
+                    img{
+                        width: 150px;
+                        height: 200px;
                         margin: auto;
+                    }
+                }
+
+                &__text{
+                    width: auto;
+                    margin: auto 30px;
+                    padding: 10px;
+                    border: 1px $title solid;
+                    background-color: rgb(233, 233, 199);
+
+                }
+            }
+
+            .jobs{
+                display: block; 
+                text-align: center;
+                margin: 30px auto 50px auto;
+
+                &__top{
+                    font-size: $top;
+                    color: $yellow;
+                }
+
+                &__title{
+                    color: $title;
+                    border-bottom: 1px $title solid;
+                }
+
+                &__list{
+                    width: 80%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    &__item{
+                        display: block;
+                        background-color: $title;
+                        color: $yellow;
+                        text-align: center;
+                        height: 40px;  
+                        display: table;
+                        
+                        .job-title{
+                            padding: 5px;
+                            margin: auto;
+                            font-size: 20px;
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+
+            .jobs__form{
+                width: 80%;
+                margin: auto auto 50px auto;
+                text-align: left;
+                justify-content: space-between;
+
+                h3, p{
+                    color: grey;  
+                    }
+
+                    .form{
+                        .availability-details{
+                            width: 50%;
+                            text-align: left;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            h4{
+                                font-size: 20px;
+                                i{
+                                    color: red;
+                                    font-size: 5px;
+                                }
+                            }
+
+                            label{
+                                width: 60px;
+                                margin: auto;
+
+                                input{
+                                    width: 60px;
+                                }
+                            }
+                        }
+
+                        button{
+                            height: 50px;
+                            width: 150px;
+                            border: none;
+                            font-size: 1.1em;
+                            font-weight: bold;
+                            color: white;
+                            cursor: pointer;
+                            background-color: rgb(58, 228, 58);
+                        }
+                    }
+            }
+
+            .main{
+                display: block;
+                text-align: center;
+                width: 80%;
+                margin: auto;
+
+                &__top{
+                    color: $yellow;
+                    font-size: $top;
+                }
+
+                &__title{
+                    color: $title;
+                }
+            }
+
+            .gallery{  
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 80%;
+                margin: 30px auto;
+
+                &__box{
+                    display: block;  
+                    margin: auto; 
+                    
+                    img{
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+
+            .text{
+                text-align: center;
+            }
+
+            .formulaire{
+                width: 80%;
+                margin: auto;
+                height: 400px;
+
+                &__inner{
+                    width: 100%;
+
+                    .form{
+                        width: 80%;
+                        margin: auto;
+
+                        #submit_button{
+                            cursor: pointer;
+                            border: none;
+                            height: 40px;
+                            width: 100px;
+                            font-weight: bold;
+                            color: white;
+                            background-color: $yellow;
+                        }
                     }
                 }
             }
@@ -383,7 +885,6 @@ html, body{
                         flex-direction: row;
                         justify-content: space-between;
                        
-
                         .footer-section{
                             h3{
                                 color: $yellow;
@@ -392,6 +893,7 @@ html, body{
 
                             ul li{
                                 list-style: none;
+                                margin: 5px;
 
                                 a{
                                     color: white;
@@ -447,117 +949,309 @@ html, body{
                 }
 
             }
+    }
+/*media queries for 1280px*/
+@media screen and (min-width: 1280px){
+    .container{
+        .vision{
+            width: 90%;
 
-            .jobs{
-                display: block; 
-                text-align: center;
-                margin: 30px auto 50px auto;
+            &__text{
+                width: 600px;
+                height: 410px;
+            }
+        }
+    }
+}
 
-                &__top{
-                    font-size: $top;
-                    color: $yellow;
-                }
-
-                &__title{
-                    color: $title;
-                }
-
-                &__list{
-                    width: 80%;
-                    margin: auto;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-
-                    &__item{
-                        display: block;
-                        background-color: $title;
-                        color: $yellow;
-                        text-align: center;
-                        height: 40px;  
-                        display: table;
-                        
-                        .job-title{
-                            margin: auto;
-                            display: table-cell;
-                            vertical-align: middle;
-                        }
-                    }
-
+/*media queries for 1024px*/
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .container{
+        .content{
+            flex-direction: column;
+            &__image{
+                img{
+                    width: 550px;
+                    height: 520px;
                 }
             }
 
-            .jobs__form{
-                width: 80%;
-                margin: auto auto 50px auto;
-                text-align: left;
-
-                h3, p{
-                    color: grey;  
-                    }
-
-                    .form{
-                        .availability-details{
-                            width: 50%;
-                            text-align: left;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-
-                            label{
-                                width: 60px;
-                                margin: auto;
-                            }
-                        }
-
-                        button{
-                            height: 50px;
-                            width: 150px;
-                            border: none;
-                            font-size: 1.1em;
-                            color: white;
-                            background-color: green;
-                        }
-                    }
+            &__text{
+                width: 700px;
+                height: auto;
+                margin: auto;
             }
+        }
+    }
+}
 
-            .main{
-                display: block;
+/*media queries for 768px*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        .header{
+            &__menu{
+                nav{
+                    width: 100%;
+                };
+            }
+        }
+
+        .vision{
+            flex-direction: column;
+            text-align: center;
+            width: 90%;
+
+            &__text{
+                margin: 20px auto;
+                width: 500px;
                 text-align: center;
-                width: 80%;
+                height: 500px;
+
+                &__content{
+                    text-align: left;
+                }
+            }
+        }
+
+        .projects{
+            height: 100px;
+
+            &__ordered,
+            &__done{
+                height: 100px;
+                padding: auto;
+                text-align: center;
+                flex: 1;
+
+                i{
+                    font-size: 30px;
+                }
+
+                &__number,
+                &__text{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .services{
+            margin: 80px auto;
+
+            &__list{
+                width: 100%;
                 margin: auto;
 
-                &__top{
-                    color: $yellow;
-                    font-size: $top;
-                }
-
-                &__title{
-                    color: $title;
+                &__item{
+                    margin: 10px;
+                    img{
+                        width: 300px;
+                    }
                 }
             }
+        }
 
-            .gallery{  
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 80%;
-                margin: 30px auto;
+        .content{
+            flex-direction: column;
+            text-align: center;
+        }
 
-                &__box{
-                    display: block;   
-                    
-                    img{
-                        width: 150px;
-                        height: 150px;
+        .content-job{
+            flex-direction: column;
+
+            &__image{
+                img{
+                    width: 150px;   
+                    margin: auto;           
+                }
+            }
+        }
+
+        .footer{
+            &__top{
+                width: 95%;
+
+                &__menu{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+/*media queries for 375px*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .container{
+        .header{
+            &__top{
+                &__section{
+                    i{
+                        font-size: 15px;
+                        margin: auto;
+                    }
+                    .details{
+                        font-size: 15px;
+
+                        p{
+                            font-size: 15px;
+                        }
                     }
                 }
             }
 
-            .text{
-                text-align: center;
+            &__menu{
+                nav{
+                    .logo{
+                        img{
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .vision{
+            flex-direction: column;
+            width: 100%;
+
+            &__image{
+                width: 370px;
+                margin: auto;
+
+                img{
+                    width: 370px
+                }
             }
 
-    }
+            &__text{
+                width: 300px;
+                height: 700px;
+                margin: auto;
 
+                &__content{
+                    width: 300px;
+                }
+            }
+        }
+
+        .projects{
+            &__ordered{
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .services{
+            &__list{
+                &__item{
+                    img{
+                        width: 300px;
+                    }
+
+                    .legend{
+                        p{
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .partners{
+            &__list{
+                img{
+                    width: 50px;
+                    height: 40px;                }
+            }
+        }
+
+        .footer{
+            &__top{
+                width: 90%;
+
+                &__menu{
+                    flex-direction: column;
+                }
+            }
+
+            &__bottom{
+                &__about{
+                    li{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .content{
+            flex-direction: column;
+            width: 100%;
+            margin: auto auto 20px auto;
+            text-align: center;
+
+            &__image{
+                margin: auto;
+                img{
+                    width: 350px;
+                    height: 300px;
+                    margin: auto;
+                }
+            }
+
+            &__title{
+                color: $title;
+                font-size: 20px;
+                border-bottom: 1px $title solid;
+            }
+
+            &__text{
+                width: 350px;
+                margin: auto;
+                padding: 5px;
+
+                &__text{
+                    width: auto;
+                }
+            }
+        }
+
+        .jobs{
+            &__list{
+                flex-direction: column;
+
+                &__item{
+                    margin: 5px;
+                }
+            }
+        }
+
+        .content-job{
+            flex-direction: column;
+            width: 100%;
+
+            &__text{
+                width: 90%;
+                margin: auto;
+                text-align: justify;
+            }
+        }
+
+        .main{
+            width: 90%;
+            
+            &__text{
+                text-align: justify;
+            }
+
+            &__title{
+                font-size: 20px;
+                width: 100%;
+                border-bottom: 1px $title solid;            }
+        }
+
+        .gallery{
+            flex-direction: column;
+        }
+    }
+}
     

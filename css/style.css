@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Athiti&family=Pattaya&family=Prompt&display=swap");
+h1 {
+  border-bottom: 1px #03232F solid;
+  margin: 20px auto;
+}
+
 html, body {
   box-sizing: border-box;
   margin: auto;
@@ -14,11 +19,13 @@ html, body {
 
 .container .header {
   width: 100%;
-  margin: auto auto 20px auto;
+  margin: auto auto 0 auto;
+  background-color: #FAA80D;
 }
 
 .container .header__top {
-  height: 80px;
+  height: 50px;
+  margin: auto;
   padding-top: 10px;
   width: 100%;
   background-color: #FAA80D;
@@ -28,50 +35,319 @@ html, body {
 }
 
 .container .header__top__section {
+  margin-top: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .container .header__top__section i {
-  font-size: 35px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 .container .header__top__section .details {
   display: flex;
   flex-direction: column;
   padding-left: 10px;
+  font-size: 18px;
+}
+
+.container .header__top__section .details p {
+  font-size: 18px;
+  margin-top: -15px;
 }
 
 .container .header__menu {
-  display: none;
+  /* logo */
+  /* white bar */
+  /* group of menu items */
+  /* menu list items */
+  /* menu list items link styles */
+  /* Mega menu */
+  /*dropdown menu */
+  /* Mobile nav */
+  /* EVERYTHING BELOW THIS IS FOR MOBILE MENU BREAK */
 }
 
-.container .header__menu__logo {
-  float: left;
+.container .header__menu input:focus,
+.container .header__menu select:focus,
+.container .header__menu textarea:focus,
+.container .header__menu button:focus {
+  outline: none;
+  width: 100%;
+  margin: auto;
+  background: #FAA80D;
+}
+
+.container .header__menu nav .logo {
+  align-self: center;
+  padding-left: 30px;
+  padding-top: 20px;
+  background-color: #03232F;
   height: 60px;
-  margin: auto 30px;
 }
 
-.container .header__menu__logo img {
-  width: 90px;
-  height: 120px;
+.container .header__menu nav .logo img {
+  height: 50px;
+  width: 50px;
+  margin: auto;
 }
 
-.container .header__menu__list {
-  float: right;
+.container .header__menu nav {
+  display: flex;
+  align-content: center;
+  width: 80%;
+  margin-top: 0px;
+  border-bottom: #440f0f;
+  background: #03232F;
+  height: 80px;
+  margin: auto;
 }
 
-.container .header__menu__list ul li {
-  display: inline;
+.container .header__menu ul.main-nav {
+  margin: 0px;
+  background-color: #03232F;
+  padding: 0px;
+  text-align: right;
+  margin-left: auto;
+  padding-right: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.container .header__menu ul.main-nav > li {
+  margin-left: 40px;
+  height: 100%;
+  display: flex;
+}
+
+.container .header__menu ul.main-nav li:hover > a {
+  color: #FAA80D;
+}
+
+.container .header__menu ul.main-nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  align-self: center;
+}
+
+.container .header__menu ul.main-nav li .mega-menu {
+  position: absolute;
+  background: #03232F;
+  width: 100%;
+  left: 0;
+  top: 70px;
+  padding: 35px 12px;
+  display: none;
+  box-sizing: border-box;
+  border-top: 1px solid #dddddd;
+}
+
+.container .header__menu ul.main-nav li:hover .mega-menu {
+  display: flex;
+}
+
+.container .header__menu input {
+  border: 1px solid #eeeeee;
+  padding: 10px 10px 10px 50px;
+  border-radius: 300px;
+  font-size: 14px;
+  background: none;
+}
+
+.container .header__menu a#locationselector {
+  margin: 0px auto;
+  margin-top: 34px;
+  padding: 15px 39px;
+  display: table;
+  clear: both;
+  border-radius: 30px;
+  font-size: 15px;
+  color: #03232F;
+  background: #f87573;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.container .header__menu a#locationselector:hover {
+  background: #03232F;
+}
+
+.container .header__menu i.fa-map-marker-alt {
+  padding-right: 10px;
+}
+
+.container .header__menu a.imgbounds {
+  overflow: hidden;
+  display: block;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background: black;
+}
+
+.container .header__menu a.imgbounds p {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  top: 46%;
+}
+
+.container .header__menu a.imgbounds img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.container .header__menu a.imgbounds:hover img {
+  opacity: 0.6;
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.container .header__menu ul.dropdownmenu {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  background: #03232F;
+  width: auto;
+  top: 70px;
+  display: none;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: -19px;
+}
+
+.container .header__menu ul.main-nav li:hover .dropdownmenu {
+  display: block;
+}
+
+.container .header__menu ul.dropdownmenu li {
+  flex-direction: column;
+  border-top: 1px solid #dddddd;
+  width: 100%;
   list-style: none;
+  padding: 16px 39px 16px 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.container .header__menu .menu-toggle-button {
+  cursor: pointer;
+  display: none;
+  user-select: none;
+  margin-left: auto;
+  align-self: center;
+  padding-right: 30px;
+}
+
+.container .header__menu .menu-toggle-button:hover {
+  color: #f87573;
+}
+
+.container .header__menu .menu-toggle {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .container .header__menu .col {
+    margin: 0px;
+  }
+  .container .header__menu nav {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+  }
+  .container .header__menu ul.main-nav {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 71px;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 70px;
+  }
+  .container .header__menu ul.main-nav li {
+    height: auto;
+    position: relative;
+    background: #03232F;
+    width: 100%;
+    margin: 0px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    display: block;
+  }
+  .container .header__menu ul.main-nav > li:last-child {
+    border-bottom: 0px;
+    padding-bottom: 130px;
+  }
+  .container .header__menu .menu-toggle:not(:checked) ~ ul {
+    display: none;
+  }
+  .container .header__menu input:checked + label {
+    color: #f87573;
+  }
+  .container .header__menu input:checked + label:before {
+    content: "\f00d";
+    font-size: 20px;
+  }
+  .container .header__menu .menu-toggle-button {
+    display: inline-flex;
+  }
+  .container .header__menu ul.main-nav li:hover .mega-menu {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .container .header__menu ul.main-nav li .mega-menu {
+    position: relative;
+    width: 100%;
+  }
+  .container .header__menu ul.main-nav li .mega-menu {
+    padding: 0px;
+    border-top: 0px;
+    top: 0px;
+    display: inline-block;
+  }
+  .container .header__menu a.imgbounds {
+    margin-top: 30px;
+  }
+  .container .header__menu ul.main-nav li:hover .mega-menu {
+    display: inline-block;
+  }
+  .container .header__menu ul.dropdownmenu {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    top: 0px;
+    margin-top: 30px;
+    display: block;
+  }
+  .container .header__menu ul.dropdownmenu li {
+    border: 0px;
+    padding: 15px 40px;
+  }
+  .container .header__menu ul.main-nav li:hover .dropdownmenu {
+    display: block;
+  }
 }
 
 .container .hero {
   display: block;
   padding-top: 130px;
-  margin: 60px auto;
+  margin: 0 auto 50px auto;
   width: 100%;
   background: #8989e7;
   height: 350px;
@@ -112,9 +388,15 @@ html, body {
   margin: auto;
 }
 
+.container .vision__image {
+  width: 550px;
+  margin: auto;
+}
+
 .container .vision__image img {
   height: 410px;
   width: 550px;
+  margin: auto;
 }
 
 .container .vision__text {
@@ -126,19 +408,23 @@ html, body {
   text-align: justify;
   padding-left: 30px;
   padding-right: 30px;
-  font-weight: 550;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .container .vision__text__top {
   color: #FAA80D;
   font-size: 22px;
-  margin: 0 auto;
 }
 
 .container .vision__text__title {
   color: #03232F;
   width: auto;
   border-bottom: 2px solid #03232F;
+}
+
+.container .vision__text__content {
+  text-align: justify;
 }
 
 .container .vision__text__content i {
@@ -160,7 +446,7 @@ html, body {
   height: 150px;
   flex: 1;
   padding-top: 50px;
-  padding-left: 250px;
+  text-align: center;
 }
 
 .container .projects__ordered i {
@@ -185,8 +471,8 @@ html, body {
   background-color: #FAA80D;
   height: 150px;
   flex: 1;
-  padding-left: 100px;
   padding-top: 50px;
+  text-align: center;
 }
 
 .container .projects__done i {
@@ -218,11 +504,14 @@ html, body {
 
 .container .services__title {
   color: #03232F;
+  width: auto;
   font-size: 30px;
+  border-bottom: 2px solid #03232F;
 }
 
 .container .services__list {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 5px auto;
   flex-direction: row;
@@ -296,6 +585,7 @@ html, body {
 
 .container .partners__title {
   color: #03232F;
+  border-bottom: 2px solid #03232F;
 }
 
 .container .partners__list {
@@ -311,27 +601,43 @@ html, body {
   width: 120px;
 }
 
+.container .latest__top {
+  color: #FAA80D;
+  font-size: 22px;
+}
+
+.container .latest__title {
+  color: #03232F;
+  border-bottom: 1px solid #03232F;
+}
+
 .container .content {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  justify-content: space-around;
+  width: 100%;
   margin: auto auto 50px auto;
 }
 
+.container .content__image {
+  margin: auto;
+}
+
 .container .content__image img {
-  width: 550px;
-  height: 470px;
+  width: 500px;
+  height: 550px;
+  margin: auto;
 }
 
 .container .content__text {
-  padding-left: 30px;
-  padding-right: 30px;
-  border: 1px #FAA80D;
+  width: 700px;
   height: auto;
   background-color: #e9e9c7;
   margin: 0 15px;
   text-align: justify;
   font-size: 15px;
+  padding: 20px;
+  border: 2px #03232F solid;
 }
 
 .container .content__text__top {
@@ -345,10 +651,193 @@ html, body {
   color: #03232F;
   margin: 10px auto;
   text-align: center;
+  border-bottom: 1px solid #03232F;
 }
 
 .container .content__text__text {
   margin: auto;
+  font-weight: bold;
+  font-size: 20px;
+  width: 700px;
+}
+
+.container .content-job {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto 50px auto;
+}
+
+.container .content-job__image {
+  height: 150px;
+  margin: auto;
+}
+
+.container .content-job__image img {
+  width: 150px;
+  height: 200px;
+  margin: auto;
+}
+
+.container .content-job__text {
+  width: auto;
+  margin: auto 30px;
+  padding: 10px;
+  border: 1px #03232F solid;
+  background-color: #e9e9c7;
+}
+
+.container .jobs {
+  display: block;
+  text-align: center;
+  margin: 30px auto 50px auto;
+}
+
+.container .jobs__top {
+  font-size: 22px;
+  color: #FAA80D;
+}
+
+.container .jobs__title {
+  color: #03232F;
+  border-bottom: 1px #03232F solid;
+}
+
+.container .jobs__list {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .jobs__list__item {
+  display: block;
+  background-color: #03232F;
+  color: #FAA80D;
+  text-align: center;
+  height: 40px;
+  display: table;
+}
+
+.container .jobs__list__item .job-title {
+  padding: 5px;
+  margin: auto;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container .jobs__form {
+  width: 80%;
+  margin: auto auto 50px auto;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.container .jobs__form h3, .container .jobs__form p {
+  color: grey;
+}
+
+.container .jobs__form .form .availability-details {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .jobs__form .form .availability-details h4 {
+  font-size: 20px;
+}
+
+.container .jobs__form .form .availability-details h4 i {
+  color: red;
+  font-size: 5px;
+}
+
+.container .jobs__form .form .availability-details label {
+  width: 60px;
+  margin: auto;
+}
+
+.container .jobs__form .form .availability-details label input {
+  width: 60px;
+}
+
+.container .jobs__form .form button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background-color: #3ae43a;
+}
+
+.container .main {
+  display: block;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.container .main__top {
+  color: #FAA80D;
+  font-size: 22px;
+}
+
+.container .main__title {
+  color: #03232F;
+}
+
+.container .gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.container .gallery__box {
+  display: block;
+  margin: auto;
+}
+
+.container .gallery__box img {
+  width: 150px;
+  height: 150px;
+}
+
+.container .text {
+  text-align: center;
+}
+
+.container .formulaire {
+  width: 80%;
+  margin: auto;
+  height: 400px;
+}
+
+.container .formulaire__inner {
+  width: 100%;
+}
+
+.container .formulaire__inner .form {
+  width: 80%;
+  margin: auto;
+}
+
+.container .formulaire__inner .form #submit_button {
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  color: white;
+  background-color: #FAA80D;
 }
 
 .container .footer {
@@ -375,6 +864,7 @@ html, body {
 
 .container .footer__top__menu .footer-section ul li {
   list-style: none;
+  margin: 5px;
 }
 
 .container .footer__top__menu .footer-section ul li a {
@@ -426,109 +916,210 @@ html, body {
   color: #FAA80D;
 }
 
-.container .jobs {
-  display: block;
-  text-align: center;
-  margin: 30px auto 50px auto;
+/*media queries for 1280px*/
+@media screen and (min-width: 1280px) {
+  .container .vision {
+    width: 90%;
+  }
+  .container .vision__text {
+    width: 600px;
+    height: 410px;
+  }
 }
 
-.container .jobs__top {
-  font-size: 22px;
-  color: #FAA80D;
+/*media queries for 1024px*/
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container .content {
+    flex-direction: column;
+  }
+  .container .content__image img {
+    width: 550px;
+    height: 520px;
+  }
+  .container .content__text {
+    width: 700px;
+    height: auto;
+    margin: auto;
+  }
 }
 
-.container .jobs__title {
-  color: #03232F;
+/*media queries for 768px*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .header__menu nav {
+    width: 100%;
+  }
+  .container .vision {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+  .container .vision__text {
+    margin: 20px auto;
+    width: 500px;
+    text-align: center;
+    height: 500px;
+  }
+  .container .vision__text__content {
+    text-align: left;
+  }
+  .container .projects {
+    height: 100px;
+  }
+  .container .projects__ordered, .container .projects__done {
+    height: 100px;
+    padding: auto;
+    text-align: center;
+    flex: 1;
+  }
+  .container .projects__ordered i, .container .projects__done i {
+    font-size: 30px;
+  }
+  .container .projects__ordered__number, .container .projects__ordered__text, .container .projects__done__number, .container .projects__done__text {
+    font-size: 20px;
+  }
+  .container .services {
+    margin: 80px auto;
+  }
+  .container .services__list {
+    width: 100%;
+    margin: auto;
+  }
+  .container .services__list__item {
+    margin: 10px;
+  }
+  .container .services__list__item img {
+    width: 300px;
+  }
+  .container .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .content-job {
+    flex-direction: column;
+  }
+  .container .content-job__image img {
+    width: 150px;
+    margin: auto;
+  }
+  .container .footer__top {
+    width: 95%;
+  }
+  .container .footer__top__menu {
+    flex-direction: column;
+  }
 }
 
-.container .jobs__list {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.container .jobs__list__item {
-  display: block;
-  background-color: #03232F;
-  color: #FAA80D;
-  text-align: center;
-  height: 40px;
-  display: table;
-}
-
-.container .jobs__list__item .job-title {
-  margin: auto;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.container .jobs__form {
-  width: 80%;
-  margin: auto auto 50px auto;
-  text-align: left;
-}
-
-.container .jobs__form h3, .container .jobs__form p {
-  color: grey;
-}
-
-.container .jobs__form .form .availability-details {
-  width: 50%;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.container .jobs__form .form .availability-details label {
-  width: 60px;
-  margin: auto;
-}
-
-.container .jobs__form .form button {
-  height: 50px;
-  width: 150px;
-  border: none;
-  font-size: 1.1em;
-  color: white;
-  background-color: green;
-}
-
-.container .main {
-  display: block;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-}
-
-.container .main__top {
-  color: #FAA80D;
-  font-size: 22px;
-}
-
-.container .main__title {
-  color: #03232F;
-}
-
-.container .gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 80%;
-  margin: 30px auto;
-}
-
-.container .gallery__box {
-  display: block;
-}
-
-.container .gallery__box img {
-  width: 150px;
-  height: 150px;
-}
-
-.container .text {
-  text-align: center;
+/*media queries for 375px*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container .header__top__section i {
+    font-size: 15px;
+    margin: auto;
+  }
+  .container .header__top__section .details {
+    font-size: 15px;
+  }
+  .container .header__top__section .details p {
+    font-size: 15px;
+  }
+  .container .header__menu nav .logo img {
+    height: 40px;
+    width: 40px;
+  }
+  .container .vision {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .vision__image {
+    width: 370px;
+    margin: auto;
+  }
+  .container .vision__image img {
+    width: 370px;
+  }
+  .container .vision__text {
+    width: 300px;
+    height: 700px;
+    margin: auto;
+  }
+  .container .vision__text__content {
+    width: 300px;
+  }
+  .container .projects__ordered i {
+    font-size: 30px;
+  }
+  .container .services__list__item img {
+    width: 300px;
+  }
+  .container .services__list__item .legend p {
+    margin-left: 30px;
+  }
+  .container .partners__list img {
+    width: 50px;
+    height: 40px;
+  }
+  .container .footer__top {
+    width: 90%;
+  }
+  .container .footer__top__menu {
+    flex-direction: column;
+  }
+  .container .footer__bottom__about li {
+    display: block;
+  }
+  .container .content {
+    flex-direction: column;
+    width: 100%;
+    margin: auto auto 20px auto;
+    text-align: center;
+  }
+  .container .content__image {
+    margin: auto;
+  }
+  .container .content__image img {
+    width: 350px;
+    height: 300px;
+    margin: auto;
+  }
+  .container .content__title {
+    color: #03232F;
+    font-size: 20px;
+    border-bottom: 1px #03232F solid;
+  }
+  .container .content__text {
+    width: 350px;
+    margin: auto;
+    padding: 5px;
+  }
+  .container .content__text__text {
+    width: auto;
+  }
+  .container .jobs__list {
+    flex-direction: column;
+  }
+  .container .jobs__list__item {
+    margin: 5px;
+  }
+  .container .content-job {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .content-job__text {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+  }
+  .container .main {
+    width: 90%;
+  }
+  .container .main__text {
+    text-align: justify;
+  }
+  .container .main__title {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px #03232F solid;
+  }
+  .container .gallery {
+    flex-direction: column;
+  }
 }
