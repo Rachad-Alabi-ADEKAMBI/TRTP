@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>TRTP - SERVICES/BUREAUX</title>
+        <title>TRTP - CANDIDATER</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -12,7 +12,18 @@
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Icons font CSS-->
+         <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
+        <!-- Vendor CSS-->
+        <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+        <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -29,8 +40,7 @@
 
     <body>
         <div class="wrapper">
-
-         <!-- Top Bar Start -->
+           <!-- Top Bar Start -->
            <div class="top-bar">
             <div class="container-fluid">
                 <div class="row2 align-items-center">
@@ -135,95 +145,160 @@
                 </nav>
             </div>
         <!-- Nav Bar End -->
-
+            
             <!-- Page Header Start -->
             <div class="page-header">
-                <div class="container6">
+                <div class="container3">
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="page-title">Bureaux d'études</h2>
+                            <h2 class="page-title">Nous Rejoindre</h2>
                         </div>
                         <div class="col-12">
-                            <a href="index.html">Accueil</a>
-                            <a href="">Services</a>
+                            <a href="index.html">Formation</a>
+                            <a href="contact.html">Offre d'emploi</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Page Header End -->
-            
-            
-            <!-- About Start -->
-            <div class="about wow fadeInUp" data-wow-delay="0.1s">
+
+
+            <!-- Contact Start -->
+            <div class="contact wow fadeInUp">
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div class="title">
-                                <p>Bureaux d'etudes</p>
-                                <h2>BUREAUX D'ÉTUDES</h2>
+                             <!--jobs form Start-->
+                    <div class="jobs__form">
+                        <div class="container">
+                            <div class="row box2">
+                                <div class="col">
+                                    <h3>CANDIDATURE POUR UNE OFFRE D'EMPLOI</h3>
+                        <p>VEUILLEZ REMPLIR LE FORMULAIRE CI DESSOUS POUR 
+                            POSTULER A UN EMPLOI CHEZ NOUS
+                        </p>
+            
+                        <form action="candidature.php" method="POST" class="form">
+                            <div class="name-title"> 
+                                <h4>Nom complet :</h4> 
+                                <span class="important">*</span>  
                             </div>
-                        </div>
-                    </div>
+                            <div class="name-details">
+                                <label for="first-name">
+                                    <input type="text" name="first-name" required 
+                                        id="f_name" class="first-name">
+                                    <p>Prenom</p>
+                                </label>
+            
+                                <label for="middle-name">
+                                    <input type="text" required name="middle__name"
+                                    id="m_name" >
+                                    <p>Deuxieme prenom</p>
+                                </label>
+            
+                                <label for="last-name">
+                                    <input type="text" class="last-name" id="l_name" required>
+                                    <p>Nom de famille</p>
+                                </label>
+                            </div>
+                            
+                            <h4>Adresse actuelle :</h4>
+                            <div class="adress-details">
+                                <label for="adress">
+                                    <input type="text" id="adress" class="adress">
+                                    <p>Adresse</p>
+                                </label>
+            <br>
+                                <label for="adress-plus">
+                                    <input type="text" class="adress-plus" 
+                                    id="adress_plus-job">
+                                    <p>Complement adresse</p>
+                                </label>
+            <br>
+                                <label for="city">
+                                    <input type="text" class="city" id="city_job">
+                                    <p>Ville</p>
+                                </label>
+            <br>
+                                <label for="zip-code">
+                                    <input type="number" id="zip_code_job" 
+                                    class="zip-code">
+                                    <p>Code postal</p>
+                                </label>
+                            </div>
+            
+                            <div class="email-title">
+                                <h4>Email</h4>
+                                <span class="important">*</span>
+                            </div>
+                            <label for="email">
+                                <input type="email" id="email_job" class="email" required>
+                                <p>exemple@exemple.com</p>
+                            </label>
+            
+                            <h4>Numero de telephone</h4>
+                            <div class="phone-details">
+                                <label for="phone-code">
+                                    <input type="tel" 
+                                    class="phone-code" id="phone_code_job"> <br>
+                                    <p>indicatif</p>
+                                </label>
+            
+                                <label for="phone-number">
+                                    <input type="tel" name="phone-number"
+                                        id="phone-number_job">
+                                    <p>Numero de telephone </p>
+                                </label>
+                            </div>
+            
+                            <div class="job-title-title">
+                                <h4>Candidature au poste de :</h4>
+                                <span class="important">*</span>
+                            </div>
+                            <label for="job-title">
+                                <select class="job-title" id="job_title_job">
+                                <option value="Soudeur-TIG">Soudeur TIG</option>
+                                <option value="Manager Commercial">Manager Commercial</option>
+                                <option value="Apprenti en Alternance SOUDEUR TIG">Apprenti en Alternance SOUDEUR TIG</option>
+                                <option value="Responsable QSE">Responsable SQE</option>
+                                </select>
+                            </label> <br> <br>
 
-                    <div class="row box2">
-                        <div class="col-lg-4 col-md-6">
-                            <!-- Carousel Start -->
-                            <div id="carousel" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel" data-slide-to="1"></li>
-                                    <li data-target="#carousel" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="img/c1.jpg" alt="Carousel Image">
-                                        
-                                    </div>
+                            <div class="contract-title">
+                                <h4>Type de contrat :</h4>
+                                <span class="important">*</span>
+                            </div><label for="contract">
+                                <input type="text" id="contract_job" class="contract">
+                            </label>
+                                <br><br>
 
-                                    <div class="carousel-item">
-                                        <img src="img/c2.jpg" alt="Carousel Image">
-                                        
-                                    </div>
+                            <h4>Disponible a partir de :</h4>
+                                <label for="availability-date">
+                                        <input type="date" id="availability_date_job"
+                                            class="availability-date">
+                                    </label>
+                                    <br>
+                                    
+                            <h5>Deposez votre cv et lettre de motivation ici</h5>
+                            <label for="profile_pic">Choose file to upload</label>
+                            <input type="file" id="profile_pic" name="profile_pic"
+                                  accept=".pdf, .jpeg, .png, png">
 
-                                    <div class="carousel-item">
-                                        <img src="img/c3.jpg" alt="Carousel Image">
-                                        
-                                    </div>
+                                  <br><br>
+                            <button type="submit" class="submit-job" name="submit-job"
+                                id="submit_job">
+                                Postuler
+                            </button>
+                        </form>
                                 </div>
-
-                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                        <!-- Carousel End -->
-                        </div>
-                        <div class="col-lg-8 col-md-6">
-                           
-                            <div class="about-text">
-                                <p class="studies-txt">
-                                    <i class="fas fa-arrow-right"></i>Notre bureau d'étude est spécialisé dans la 
-                                    réalisation des études de renouvellement et
-                                     de conception des ouvrages de distribution de gaz,
-                                      d'électricité et d'eau. <br>
-
-                                      <i class="fas fa-arrow-right"></i>Nous intervenons également dans le domaine de 
-                                    la topographie et de la géo-détection.
-                                                                <br>
-                                                                <i class="fas fa-arrow-right"></i>Nous intervenons aussi dans l'établissement des
-                                     différents diagnostics thermiques.
-                                </p>
-                              
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- About End -->
+                <!--fobs form end-->
+                        </div>
+                    </div>
+                </div>            </div>
+            <!-- Contact End -->
 
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -298,9 +373,22 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <!-- Jquery JS-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <!-- Vendor JS-->
+        <script src="vendor/select2/select2.min.js"></script>
+        <script src="vendor/datepicker/moment.min.js"></script>
+        <script src="vendor/datepicker/daterangepicker.js"></script>
+
+         <!-- Main JS-->
+        <script src="js/global.js"></script>
     </body>
 </html>
-
