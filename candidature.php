@@ -14,7 +14,7 @@ if (isset($_POST) AND isset($_POST['f_name']) AND isset($_POST['l_name']) AND is
       Objet: $user_query \n
       Titre du poste: $job_title_job \n
       Contrat: $contract_job \n
-      Disponibilite: $availability_date_job \n
+      Disponibilite: $availability_date_job";
       $heading="From: $email_job \n Reply-To $email_job";
       mail($receiver, $query, $message, $heading);
       echo"Candidature envoyé.";

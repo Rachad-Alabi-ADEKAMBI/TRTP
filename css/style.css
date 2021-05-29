@@ -19,6 +19,7 @@ h6 {
 
 h2{
   border-bottom: 1px solid #03232f ;
+  margin-bottom: 50px;
 }
 
 a {
@@ -2454,31 +2455,27 @@ a:focus {
 }
 
 /*additionnal rules*/
-
-.work{
-  font-style: italic;
-  height: fit-content;
-  font-weight: 500; 
-  color: #03232f; 
-  width: 100%; 
-  margin-top: -200px;
-}
-
 .title{
   width: 90%;
   margin: auto ;
   text-align: center;
 }
 
+.title h2{
+  font-weight: 600;
+}
+
 .title p{
   color: #faa80d;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .box2,
 .box3,
 .box4 {
   padding: 0;
-  width: 97%;
+  width: 100%;
   margin: auto;
 }
 
@@ -2650,4 +2647,334 @@ width: 265px;
 
 input:valid {
   border: 1px solid black;
+}
+
+/* responsive */
+@media (min-width: 1440px) {
+  .bureaux-content,
+  .about-content,
+  .about-page-content,
+  .terrassement-content,
+  .soudure-content,
+  .peinture-content,
+  .rejoindre-content,
+  .candidater-content,
+  .blog-content{
+    width: 81%;
+    margin: auto; 
+  }
+
+  .contact-content{
+    width: 79%;
+    margin: auto;
+  }
+
+  .qse-content{
+    width: 79%;
+    margin: auto;
+  }
+
+  .qse-items{
+    width: 85%;
+    margin: auto;
+  }
+
+  .about-content p{
+    line-height: 1.8em;
+    font-size: 1.6em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .bureaux-content p{
+    line-height: 1.9em;
+    margin-top: 70px;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .soudure-content p{
+    line-height: 1.5em;
+    margin-top: 70px;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .peinture-content p{
+    line-height: 1.6em;
+    margin-top: 70px;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .rejoindre-content p{
+    line-height: 1.6em;
+    margin-top: 70px;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .about-page-content p{
+    line-height: 1.5em;
+    font-size: 1.4em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .services-list{
+    padding: 0;
+  }
+
+  .services-list .wow{
+    padding: 1px;
+  }
+
+  .services-list .wow .service-item{
+    padding: 5px;
+  }
+
+  .blog-section{
+    padding: 0;
+  }
+
+  .blog-section .wow{
+    padding: 1px;
+    width: 100%;
+  }
+
+  .about .container{
+    width: 100%;
+  }
+}
+
+/* 1280px */
+@media (min-width: 1280px) and (max-width: 1439px){
+  .about-content,
+  .about-page-content,
+  .terrassement-content,
+  .bureaux-content,
+  .soudure-content,
+  .peinture-content,
+  .rejoindre-content,
+  .candidater-content,
+  .blog-content{
+    width: 78%;
+    margin: auto; 
+  }
+
+  .contact-content{
+    width: 76%;
+    margin: auto;
+  }
+
+  .bureaux-content p{
+    line-height: 1.5em;
+    margin-top: 70px;
+    font-size: 1.6em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+  .about-content p{
+    line-height: 2.1em;
+    font-size: 1.8em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .about-page-content p{
+    line-height: 1.5em;
+    font-size: 1.4em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .soudure-content p{
+    line-height: 1.5em;
+    font-size: 1.4em;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .peinture-content p{
+    line-height: 1.7em;
+    font-size: 1.4em;
+    padding: 10px;
+    margin-top: 70px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .rejoindre-content p{
+    line-height: 1.7em;
+    font-size: 1.4em;
+    padding: 10px;
+    margin-top: 70px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .qse-content{
+    width: 77%;
+    margin: auto;
+  }
+
+  .qse-items{
+    width: 90%;
+    padding: 0;
+    margin: auto;
+  }
+  .blog-section{
+    width: 90%;
+    margin: auto;
+  }
+
+  .blog title{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* 1024px */
+@media (min-width: 1024px) and (max-width: 1279px){
+  .title{
+    margin-top: -100px;
+  }
+  .about-content{
+    width: 73%;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content p{
+    line-height: 2em;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .about-page-content{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-page-content p{
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5em;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .terrassement-content,
+  .bureaux-content,
+  .soudure-content,
+  .peinture-content,
+  .rejoindre-content,
+  .contact-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .candidater-content{
+    width: 80%;
+    margin: auto;
+  }
+
+  .bureaux-content p{
+    line-height: 1.5em;
+    margin-top: 70px;
+    text-align: left;
+    font-size: 1.6em;
+    padding: 10px;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .qse-content{
+    width: 65%;
+    margin: auto;
+  }
+
+  .qse-items{
+    width: 90%;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+  }
+
+  .soudure .col{
+    width: 100%;
+  }
+  .soudure-content p{
+    line-height: 1.5em;
+    margin-top: 70px;
+    text-align: left;
+    font-size: 1.6em;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .peinture-content p{
+    line-height: 1.5em;
+    margin-top: 70px;
+    text-align: left;
+    font-size: 1.6em;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .rejoindre-content p{
+    line-height: 1.5em;
+    margin-top: 70px;
+    text-align: left;
+    font-size: 1.6em;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(219, 219, 250);
+  }
+
+  .services-list{
+    width: 97%;
+    margin: auto;
+  }
+
+  .team .team-list{
+    margin: auto;
+    width: 90%;
+  }
+
+  .blog-section{
+    width: 80%;
+    margin: auto;
+  }
+
+  .blog .title{
+    width: 70%;
+    margin: auto;
+  }
+
+  .blog-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .name-details{
+    flex-direction: column;
+  }
 }
