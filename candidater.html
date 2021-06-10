@@ -177,51 +177,52 @@
                             POSTULER A UN EMPLOI CHEZ NOUS
                         </p>
             
-                        <form action="candidature.php" method="POST" class="form">
+                        <form action="candidature.php" method="post" class="form">
                             <div class="name-title"> 
                                 <h4>Nom complet :</h4> 
                                 <span class="important">*</span>  
                             </div>
+                            
                             <div class="name-details">
-                                <label for="first-name">
-                                    <input type="text" name="first-name" required 
-                                        id="f_name" class="first-name">
+                                <label for="first-name" name="first-name">
+                                    <input type="text" name="first-name" required
+                                        id="first-name" class="first-name">
                                     <p>Prenom</p>
                                 </label>
-            
-                                <label for="middle-name">
-                                    <input type="text" required name="middle__name"
-                                    id="m_name" >
+         
+                                <label for="middle-name" name="middle-name">
+                                    <input type="text" name="middle-name" required
+                                    id="middle-name" >
                                     <p>Deuxieme prenom</p>
                                 </label>
             
-                                <label for="last-name">
-                                    <input type="text" class="last-name" id="l_name" required>
+                                <label for="family-name" name="family-name">
+                                    <input type="text" id="family-name" name="family-name" required>
                                     <p>Nom de famille</p>
                                 </label>
+     
                             </div>
-                            
+            
                             <h4>Adresse actuelle :</h4>
                             <div class="adress-details">
-                                <label for="adress">
-                                    <input type="text" id="adress" class="adress">
+                                <label for="adress" name="adress">
+                                    <input type="text" id="adress" name="adress">
                                     <p>Adresse</p>
                                 </label>
             <br>
-                                <label for="adress-plus">
-                                    <input type="text" class="adress-plus" 
-                                    id="adress_plus-job">
+                                <label for="adress-plus" name="adress-plus">
+                                    <input type="text" id="adress-plus" name="adress-plus">
                                     <p>Complement adresse</p>
                                 </label>
             <br>
-                                <label for="city">
-                                    <input type="text" class="city" id="city_job">
+                                <label for="city" name="city">
+                                    <input type="text" class="city" name="city"  id="city">
                                     <p>Ville</p>
                                 </label>
             <br>
-                                <label for="zip-code">
-                                    <input type="number" id="zip_code_job" 
-                                    class="zip-code">
+                                <label for="zip-code" name="zip-code">
+                                    <input type="number" id="zip" 
+                                    class="zip-code" name="zip">
                                     <p>Code postal</p>
                                 </label>
                             </div>
@@ -230,22 +231,21 @@
                                 <h4>Email</h4>
                                 <span class="important">*</span>
                             </div>
-                            <label for="email">
-                                <input type="email" id="email_job" class="email" required>
+                            <label for="email" name="email">
+                                <input type="email" id="email" name="email"  class="email" required>
                                 <p>exemple@exemple.com</p>
                             </label>
             
                             <h4>Numero de telephone</h4>
                             <div class="phone-details">
-                                <label for="phone-code">
+                                <label for="phone-code" name="phone-code">
                                     <input type="tel" 
-                                    class="phone-code" id="phone_code_job"> <br>
+                                    class="phone-code" id="phone_code_job" name="phone-code"> <br>
                                     <p>indicatif</p>
                                 </label>
             
-                                <label for="phone-number">
-                                    <input type="tel" name="phone-number"
-                                        id="phone-number_job">
+                                <label for="phone-number" name="phone">
+                                    <input type="tel" id="phone" name="phone">  
                                     <p>Numero de telephone </p>
                                 </label>
                             </div>
@@ -254,8 +254,8 @@
                                 <h4>Candidature au poste de :</h4>
                                 <span class="important">*</span>
                             </div>
-                            <label for="job-title">
-                                <select class="job-title" id="job_title_job">
+                            <label for="job" name="job">
+                                <select class="job-title" id="job" name="job">
                                 <option value="Soudeur-TIG">Soudeur TIG</option>
                                 <option value="Manager Commercial">Manager Commercial</option>
                                 <option value="Apprenti en Alternance SOUDEUR TIG">Apprenti en Alternance SOUDEUR TIG</option>
@@ -263,37 +263,40 @@
                                 </select>
                             </label> <br> <br>
 
-                            <div class="contract-title">
+                            <div class="contrat-title">
                                 <h4>Type de contrat :</h4>
                                 <span class="important">*</span>
-                            </div><label for="contract">
-                                <input type="text" id="contract_job" class="contract">
+                            </div><label for="contrat" name="contrat">
+                                <input type="text" id="contrat"
+                                 class="contrat" name="contrat">
                             </label>
                                 <br><br>
 
                             <h4>Disponible a partir de :</h4>
-                                <label for="availability-date">
-                                        <input type="date" id="availability_date_job"
-                                            class="availability-date">
+                                <label for="availability-date" name="availability-date">
+                                        <input type="date" id="availability-date"
+                                            class="availability-date" name="availability-date">
                                     </label>
                                     <br>
                                     
                             <h5>Deposez votre cv et lettre de motivation ici</h5>
-                            <label for="profile_pic">Choose file to upload</label>
-                            <input type="file" id="profile_pic" name="profile_pic"
-                                  accept=".pdf, .jpeg, .png, png">
+                            <label for="letter" name="letter">Veuillez choisir le fichier</label>
+                            <input type="file" id="letter" class="profile_pic"
+                                  accept=".pdf, .jpeg, .png, png" name="letter">
 
                                   <br><br>
-                            <button type="submit" class="submit-job" name="submit-job"
-                                id="submit_job">
-                                Postuler
+
+          
+                            <button style="background-color: green; color: white;
+                            font-weight: bold; height: 50px; width: 100px; cursor: pointer;" type="submit" class="submit" name="submit"
+                                id="submit">Postuler
                             </button>
                         </form>
                                 </div>
                             </div>
                                 </div>
                             </div>
-                            <!--fobs form end-->
+                         
                         </div>
                     </div>
                 </div>            
